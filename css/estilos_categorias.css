@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-family: Lato;
+    font-size: 30px;
+}
+
+h4{
+    margin-top: 15px;
+    font-family: Lato;
+    font-size: 20px;
+}
+
+p{
+    font-style: ligth;
+    font-size: 12px;
+}
+
+body {
+    background: #DAD4D4;
+    margin: auto;
+    
+}
+
+header{
+    width: 100%;
+    background: #FFFFFF;
+    height: 140px;
+}
+
+.header{
+    width: 70%;
+    max-width: 940px;
+    height: 140px;
+    margin: auto;
+}
+
+.header a {
+    width: 30%;
+    height: 140px;
+    float: left;
+}
+
+.header a img{
+    max-width: 100%;
+    padding-top: 10%;
+
+}
+
+.header h1{
+    width: 70%;
+    height: 140px;
+    float:left;
+    color: #000000;
+    font-family: lato;
+    font-size: 5em;
+    letter-spacing: 3px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+.Principal{
+  
+    width: 70%;
+    max-width: 940px;
+    margin: auto;
+
+}
+
+.Titulo{
+    margin-top: 40px;
+    text-align: center;
+    background-color: #24303d;
+    color: white;
+
+}
+
+.ListaProductos{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.Producto{
+    width: 25%;
+    float: left;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+/*Estilos para la encuesta, modifico color de etiquetas HTML, a la clase controls le doy el mismo estilo*/
+.encuesta{
+    width: 50%;
+    background: #24303d;
+    padding: 20px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 4px;
+    font-family: "calibri";
+    color:white;
+
+}
+
+.encuesta select{
+    color: white;
+}
+.encuesta input[type="date"]{
+    color: white;
+}
+.encuesta label{
+    color:white;
+    font-family: "calibri";
+}
+.controls{
+    width: 95%;
+    background-color: #24303c;
+    padding: 2%;
+    border-radius: 4px;
+    margin: 3% 0%;
+    border:1px solid #1f53c5;
+    font-family: "calibri";
+    font-size: 17px;
+    color: white;
+}
+
+.radio {
+    margin-bottom: 4%;
+}
+
+.radio input {
+    margin: 2% 3% 2% 2%;
+}
+
+
+
+/*A la clase buttons le doy un estilo diferente*/
+.buttons {
+    width: 30%;
+    background-color: #1f53c5;
+    border: none;
+    padding: 1%;
+    color: white;
+    margin-left: 2%;
+}
+
+/*Le doy un displey flex usando flexbox y pongo a los elementos en linea horizontal*/
+.menu_nav ul{
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    background-color: #363636;
+}
+/*alineo el texto al centro de la li y con grow le doy el ancho total del ul*/
+.menu_nav li{
+    border-right: 1px solid #fff;
+    text-align: center;
+    flex-grow: 1;
+}
+/*Aplico un hover con una variación del color original*/
+.menu_nav li:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+.menu_nav li a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+
+
+/* footer */
+footer {
+    width: 100%;
+    padding: 10px 0px;
+    background-color:hsl(202, 68%, 67%);
+    clear:both;
+    margin-top: 10%;
+}
+
+.container_footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.box_footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+.box_footer .logo img{
+    width: 180px;
+}
+
+.box_footer .descripcion{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500em;
+    font-size: 18px;
+}
+
+.box_footer h2 {
+    margin-bottom: 30px;
+    font-weight: 700em;
+}
+
+.box_footer a {
+    margin-top: 10px;
+    font-weight: 600em;
+}
+
+.box_footer a:hover {
+    opacity: 0.8;
+}
+
+.box_footer a .fab {
+    font-size: 20px;
+}
+
+.copyrigth {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.copyrigth p{
+    margin-top: 10px;
+}
+
+.copyrigth hr {
+    border: none;
+    height: 1px;
+    background-color: #7a7a7c;
+}
+/*.Producto img{
+    margin: 0px 40px;
+}*/

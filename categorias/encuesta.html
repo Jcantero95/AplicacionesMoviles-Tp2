@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/estilos_categorias.css">
+		<script type="text/javascript" src="..\scripts\main.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.js"
+  		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  		crossorigin="anonymous"></script>
+		
+		<meta charset="UTF-8">
+		<title>TP2</title>
+	</head>
+	<body>
+		<header>
+			<div class="header">
+			<a href="../index.html"> <img id="logo" src="../images/logo1.png" width="400px"></a>
+			<h1>REMERAS</h1>
+			</div>
+		</header>
+
+		<main class="Principal">
+			<nav class="menu_nav">
+				<ul>
+					<li><a href="../index.html">Inicio</a></li>
+					<li><a href="categoria_comic.html">Comic</a></li>
+					<li><a href="categoria_bandas.html">Bandas</a></li>
+					<li><a href="categoria_deportes.html">Deportes</a></li>
+					<li><a href="categoria_accesorios.html">Accesorios</a></li>
+					<li><a href="encuesta.html">Encuesta</a></li>
+				</ul>
+			</nav>
+			<section>
+				<div class="Titulo">
+					<h2> ENCUESTA LOGO´S </h2>
+				</div>
+			</section>
+			
+			<section class="encuesta">
+				<form action ="" name='form' method="GET" >
+					<label for="nombres">Nombre:</label>
+					<input autofocus class="controls" type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
+					
+					<label for="apellidos">Apellido: </label>
+					<input class="controls" type="text" name="apellido" id="apellido" placeholder="Ingresá tu apellido">
+					
+					<label for="fec_de_nac">Fecha de nacimiento: </label>
+					<input class= "controls" type="text"id="fec_de_nac" name="fec_de_nac" placeholder="dd/mm/aaaa">
+
+					<label for="">Sexo:</label>
+
+					<div class="radio">
+					<label for="mujer">Mujer: </label>
+					<input type="radio" id="mujer"name="sexo">
+
+					<label for="hombre">Hombre: </label>
+					<input type="radio" id="hombre"name="sexo">
+
+					<label for="nodice">Prefiero no decirlo: </label>
+					<input type="radio" id="nodice"name="sexo">
+					</div>
+	
+					
+					<label for="experiancia">Experiencia: </label>
+					<select class="controls" id="experiancia"name="experiancia" id="experiencia">
+						<option>Lamentable</option>
+						<option>Mala</option>
+						<option>Podría ser mejor</option>
+						<option>Cumple con mis expectativas</option>
+						<option>Me encantó</option>
+					</select>
+					
+					<label for="correo">Correo: </label>
+					<input class="controls" type="text" name="correo" id="correo" placeholder="mimail@mimail.com">
+					
+					<label for="Area_texto">Comentarios: </label>
+					<textarea class="controls" id="Area_texto"placeholder="Ingrese su comentario..."></textarea>
+					
+					<!--<input type="submit" id="btn_enviar" class="buttons" value="Enviar"> -->
+					<input type="submit" id="btn_enviar" name="btn_enviar" class="buttons" value="Enviar" onclick="validar();">
+					<input type="button" name="Cancelar" id="Cancelar" value="Cancelar" class="buttons" onclick="CancelarEncuesta()">					
+					<button type="reset" class="buttons" id="Restablecer">Restablecer</button> 
+					
+					
+
+				</form>
+			</section>
+		</main>
+
+		<footer>
+		<div class="container_footer">
+
+			<div class="box_footer">
+				<div class="logo">
+					<img src="../images/logo1.png" alt="">
+				</div>
+				<div class="descripcion">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, laborum, rem laudantium,
+						impedit eveniet at harum facere voluptatibus doloremque explicabo autem nulla! Laudantium sint
+						eos nesciunt tempore aut vero dolores.</p>
+				</div>
+
+			</div>
+
+			<div class="box_footer">
+				<h2>Categorias</h2>
+				<a ref="#">Comic</a>
+				<a ref="#">Bandas</a>
+				<a ref="#">Deportes</a>
+				<a ref="#">Accesorios</a>
+			</div>
+
+			<div class="box_footer">
+				<h2>Redes Sociales</h2>
+				<a ref="#"><i class="fab fa-facebook"></i> Facebook</a>
+				<a ref="#"><i class="fab fa-instagram"></i> Instagram</a>
+				<a ref="#"><i class="fab fa-twitter"></i> Twitter</a>
+			</div>
+
+		</div>
+
+		<div class="copyrigth">
+			<hr>
+			<p>Todos los derechos reservados @ 2021 <b>Desarrolladores</b></p>
+		</div>
+
+	</footer>
+
+	
+
+	</body>
+</html>		
