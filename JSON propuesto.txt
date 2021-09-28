@@ -1,7 +1,8 @@
 Producto
 {
    "id":"id",
-   "titulo":"titulo",
+   "categoria":"categoria",
+   "articulo":"articulo",
    "imagen": "imagen",
    "descripción":"descripción",
    "precio":"precio",
@@ -15,7 +16,8 @@ El código corrido en JSON Genarator es:
   '{{repeat(10)}}',
   {
     _id: '{{objectId()}}',
-    titulo:'{{random("Remera", "Gorra")}}',
+    categoria:'{{random("Bandas", "Deportes", "Comic", "Accesorios")}}'
+    articulo:'{""}',
     picture: 'http://placehold.it/32x32',
     descripcion: '{{lorem(1, "paragraphs")}}',
     precio:'100',
