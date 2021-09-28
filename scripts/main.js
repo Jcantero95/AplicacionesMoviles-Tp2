@@ -114,7 +114,6 @@ function opacidad(){
 		}else{
 			$(this).fadeTo(1, 1);
 			$(this).css('background-color','');
-			contador=contador-1;
 			detectarOpacidad=true;
 		}
 	});
